@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Project Calculator</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+                
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: #2B2D3E;
+            }
+            .calculator{
+                position: relative;
+                display: grid;
+
+            }
+            .calculator , value {
+                grid-column: span 4;
+                height: 100px;
+                text-align: none;
+                border: right;
+                outline: none;
+                padding: 10px;
+                font-size: 12px;
+            }
+            .calculator span{
+                display: grid;
+                width: 63px;
+                height: 50px;
+                color: #fff;
+                background: #0c2835;
+                place-items: center;
+                border: 1px solid rgba(0, 0, 0, .1);
+            }
+            .calculator span:active{
+                background: #74ff3b;
+                color: #fff;
+            }
+            .calculator span.clear {
+                grid-column: span 2;
+                width: 120px;
+                background: #ff3077;
+            }
+            .calculator span.plus{
+                grid-row: span 2;
+                height: 120px;
+            }
+            .calculator span.equal{
+                background: #01b1ff;
+            }
+        </style>
+        </head>
+        <body>
+            <form class="calculator" name="calc">
+                <input class="value" type="text" name="txt" readonly=""/>
+                <span class="num clear " onclick="">c</span>
+                <span class="num " onclick="">/</span>
+                <span class="num " onclick="">*</span>
+                <span class="num " onclick="">7</span>
+                <span class="num " onclick="">8</span>
+                <span class="num " onclick="">9</span>
+                <span class="num " onclick="">-</span>
+                <span class="num " onclick="">4</span>
+                <span class="num" onclick="">5</span>
+                <span class="num " onclick="">6</span>
+                <span class="num plus " onclick="">+</span>
+                <span class="num " onclick="">1</span>
+                <span class="num " onclick="">2</span>
+                <span class="num " onclick="">3</span>
+                <span class="num " onclick="">0</span>
+                <span class="num " onclick="">00</span>
+                <span class="num" onclick="">.</span>
+                <span class="num equal" onclick="">=</span>
+
+            </form>
+
+
+        </body>
+        </html>
