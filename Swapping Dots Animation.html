@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Swapping Dots Animation</title>
+        <style>
+            body{
+                background-color: rgb(51, 47, 47);
+                opacity: 0;
+                animation: fadein ease-in-out 3s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+            @keyframes fadein {
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+            h1{
+                color: blue;
+            }
+            .swap-dots {
+                margin-left: 100px;
+                width: 160px;
+                justify-content: center;
+                align-items: center;
+                aspect-ratio: 1;
+                --_g: no-repeat
+                radial-gradient(farthest-side,#ff206e 90%, #0000);
+                background: var(--_g),var(--_g),
+                var(--_g),var(--_g);
+                background-size: 40% 40%;
+                animation: swap 1s infinite;
+
+            }
+            @keyframes swap {
+              0%{
+                 background-position: 0 0, 100% 0, 
+                100% 100%, 0 100%;
+
+             }
+             40%,
+             50%{
+                 background-position: 100% 100%,
+                 100% 0, 0 0, 0 100%;
+             }
+             90%,
+             100% {
+                 background-position: 100% 100%,
+                 0 100%, 0 0, 100% 0;
+             }
+            }
+            .bounce {
+                animation: bouncing
+                           1s ease-in-out
+                           infinite alternate;
+            }
+            @keyframes bouncing {
+                0% {
+                    transform: translateY(0px);
+                }
+                100% {
+                    transform: translateY(20px);
+                }
+            }
+
+        </style>
+</head>
+<body>
+    <center>
+    <h1 class="bounce">Swap dots Animation</h1>
+    <div class="swap-dots"></div>
+</center>
+    
+        
+</body>
+    
+    
+
+</html>

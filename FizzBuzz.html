@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+</head>
+<body>
+  <center><fieldset>
+<form>
+<center>
+<label>
+Number:
+</label>
+<input type="number" id="input"/>
+<div>
+<button onclick="fizzBuzz()" type="button">Click</button>
+</div>
+<div id="output">
+
+</div>
+</center>
+</form>
+    </fieldset>
+</center>
+<p>Instructions</p>
+<ul>
+<li>If input is divisible by 3 the result must be "Fizz".</li>
+<li>If input is divisible by 5 the result must be "Buzz".</li>
+<li>If input is divisible by both 3 and 5 the result must be "FizzBuzz".</li>
+</ul>
+<style>
+fieldset{
+margin-top:8.7rem;
+padding-top: 5.7rem;
+font-size:45px;
+background-color:rgb(172, 207, 221);
+width:50%;
+height:290px;
+
+}
+#input{
+    height:23px;
+   width:45%;
+   background-color: darkgray;
+   color:black;
+
+}
+label{
+    color:rgb(16, 141, 143);
+}
+button{
+    height:40px;
+    width:23%;
+    background-color:rgb(65, 65, 226);
+    color:white;
+    font-size: 19px;
+    border-radius:.5em;
+    
+}
+body{
+    background-color:rgb(186, 186, 247)
+}
+#output{
+    color:rgb(4, 83, 83);
+}
+p{
+    color:rgb(65, 62, 62);
+    font-family:tahoma ;
+    font-size:21px;
+}
+li{
+    font-size:20px;
+}
+</style>
+
+
+
+
+
+<script>
+function fizzBuzz(input){
+var output = document.getElementById("output");
+var input = document.getElementById("input").value;
+if (input % 3 === 0){
+    output.innerHTML= 'Fizz'; 
+}
+if (input % 5 === 0){
+    output.innerHTML= 'Buzz'; 
+}
+
+if (( input % 3 === 0)&& (input % 5 === 0)){
+output.innerHTML= 'FizzBuzz'; 
+}
+}
+
+</script>
+
+</body>
+</html>
+
