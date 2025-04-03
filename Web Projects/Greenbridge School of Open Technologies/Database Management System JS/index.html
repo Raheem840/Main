@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <!-- Left Side: Records -->
+        <div class="records-container">
+            <h1>Records</h1>
+            <div id="recordsContainer"></div>
+        </div>
+
+        <!-- Right Side: Form -->
+        <div class="form-container">
+            <h1>Add New Record</h1>
+            <form id="recordForm">
+                <label for="imageInput">
+                    <img id="previewImage" src="user-profile-icon.png" alt="Click to upload" style="cursor: pointer; width: 100px; height: 100px; border-radius: 50%;">
+                </label>
+                <input type="text" id="name" placeholder="Enter Name" required>
+                <input type="date" id="dob" required>
+                <input type="file" id="image" accept="image/*" required>
+                <button type="submit" class="submit">Add Record</button>
+            </form>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

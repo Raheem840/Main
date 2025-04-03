@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+
+<p>Click the button to display the date.</p>
+<button onclick="displayDate()">The time is?</button>
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+    <div id="demo5"></div>
+    <div id="demo6"></div>
+    <div id="demo7"></div>
+    <div id="demo8"></div>
+    <div id="demo9"></div>
+    <div id="demo10"></div>
+    <div id="demo11"></div>
+    <div id="demo12"></div>
+    <div id="demo13"></div>
+    <div id="demo14"></div>
+    <div id="demo15"></div>
+    <div id="demo16"></div>
+    <p id="demo17"></p>
+
+    <h1>JavaScript Strings</h1>
+
+<p>The escape sequence \' inserts a single quote in a string.</p>
+
+<p id="demo18"></p>
+
+<p>The escape sequence \" inserts a double quote in a string.</p>
+
+<p id="demo19"></p>
+
+<h1>JavaScript Template Strings</h1>
+<p>Templates allow multiline strings:</p>
+
+<p id="demo20"></p>
+
+<p>Templates are not supported in Internet Explorer.</p>
+
+<h2>The charAt() Method</h2>
+
+<p>The charAt() method returns the character at a given position in a string:</p>
+
+<p id="demo21"></p>
+
+<h2>The at() Method</h2>
+
+<p>The at() method returns an indexed element from a string:</p>
+
+<p id="demo22"></p>
+
+<h2>The slice() Method</h2>
+
+<p>The sliced (extracted) part of the string is:</p>
+<p id="demo23"></p>
+
+<h1>JavaScript String Methods</h1>
+<p>The substring() method extract a part of a string and returns the extracted parts in a new string:</p>
+<p id="demo24"></p>
+
+<p id="demo25"></p>
+
+<p>Convert string to upper case:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo26">Hello World!</p>
+
+<p>Convert string to lower case:</p>
+
+<button onclick="myFunction2()">Try it</button>
+<p id="demo27"></p>
+
+
+    <script src="index.js">
+        function displayDate() {
+  document.getElementById("demo17").innerHTML = Date();
+}
+
+let text = 'It\'s alright.';
+document.getElementById("demo18").innerHTML = text; 
+
+let text1 = "We are the so-called \"Vikings\" from the north.";
+document.getElementById("demo19").innerHTML = text + "<br>"; 
+
+let text2 =
+
+`The quick
+brown fox
+jumps over
+the lazy dog`;
+
+document.getElementById("demo20").innerHTML = text;
+
+//String methods
+var text3 = "HELLO WORLD";
+document.getElementById("demo21").innerHTML = text3.charAt(0);
+
+
+//at() method
+const name = "Greenbridge";
+let letter = name.at(2);
+document.getElementById("demo22").innerHTML = letter;
+
+let text4 = "Apple, Banana, Kiwi";
+let part = text.slice(7,13);
+document.getElementById("demo").innerHTML = part + "<br>"; 
+
+//substring() method
+let str = "Apple, Banana, Ovacado";
+document.getElementById("demo24").innerHTML = str.substring(7,13) + "<br>";
+
+let str2 = "Apple, Banana, Kiwi";
+let part2 = str.substr(-4);
+document.getElementById("demo25").innerHTML = part2 + "<br>";
+
+//JavaScript String toUpperCase()
+let text3 = "Hello World!";
+let text5 = text1.toUpperCase();
+function myFunction() {
+  let text = document.getElementById("demo26").innerHTML;
+  document.getElementById("demo26").innerHTML =
+  text.toUpperCase() + "<br>" + "<br>";
+}
+
+//JavaScript String tolowerCase()
+let text6 = "Hello World!";
+let text7 = text1.tolowerCase();
+function myFunction2() {
+  let text = document.getElementById("demo").innerHTML;
+  document.getElementById("demo").innerHTML =
+  text.tolowerCase() + "<br>" + "<br>";
+}
+
+
+
+
+    </script>
+ 
+</body>
+</html>

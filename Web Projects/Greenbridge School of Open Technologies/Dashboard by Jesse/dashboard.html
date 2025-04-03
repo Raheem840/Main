@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">GolRush...</div>
+        <div class="header-options">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <div class="menu-btn" id="menuBtn">☰</div>
+            <img src="gojo.png" alt="Admin Profile" class="admin-profile" onerror="this.src='fallback.png';">
+        </div>
+    </header>
+
+    <!-- Sidebar (Nav) -->
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li>Dashboard</li>
+            <li data-page="settings">Settings</li>
+            <li data-page="profile">
+                <a href="profile.html">
+                Profile
+            </li>
+            <li data-page="messages">
+                <a href="messages.html">
+                Messages
+            </a>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main">
+        <!-- Stats Cards -->
+<div class="cards">
+    <div class="card">
+        <i class="fas fa-eye"></i> Daily Views: 777.4K
+    </div>
+    <div class="card">
+        <i class="fas fa-thumbs-up"></i> Likes: 230.7K
+    </div>
+    <!-- Comments Card -->
+    <div class="card" id="commentsCard">
+        <i class="fas fa-comment-alt"></i> Comments: 85.4K
+        <!-- Comments Modal (Hidden by Default) -->
+<div id="commentsModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeCommentsModal">&times;</span>
+        <h2>User Comments</h2>
+        <ul id="commentsList">
+            <li>Great dashboard! - John</li>
+            <li>Can we get a dark mode? - Sarah</li>
+            <li>This looks amazing! - Alex</li>
+            <li>Nice UI design. - Emma</li>
+            <li>Keep up the good work! - Mike</li>
+            <li>Looking forward to more features! - Chris</li>
+            <li>Love the football updates! - David</li>
+            <li>The articles are very informative. - Jessica</li>
+            <li>Would love live match stats. - Tom</li>
+            <li>Great job on the UI improvements! - Lucy</li>
+        </ul>
+    </div>
+</div>
+    </div>
+    <div class="card">
+        <i class="fas fa-check-circle"></i> Shares: 30.3K
+    </div>
+</div>
+
+    <!-- Recent Articles Section -->
+<div class="recent-articles">
+    <h2>Recent Articles</h2>
+    <div class="articles-list">
+        <div class="article" data-title="Football Transfers" data-content="The football transfer window is one of the most exciting periods for fans. Clubs across Europe compete to sign the best talents to strengthen their squads. In recent seasons, we have seen record-breaking transfers such as Neymar’s move to PSG for €222 million...">
+            Football Transfers
+        </div>
+        <div class="article" data-title="Premier League Updates" data-content="The Premier League is in full swing, with teams battling for the title, top-four spots, and survival. Manchester City continues their dominance, while Arsenal and Liverpool are keeping up the pressure...">
+            Premier League Updates
+        </div>
+        <div class="article" data-title="Champions League Highlights" data-content="The UEFA Champions League never disappoints, delivering high-quality football, last-minute goals, and historic comebacks. This season, Real Madrid and Bayern Munich have been standout performers...">
+            Champions League Highlights
+        </div>
+        <div class="article" data-title="Top Goal Scorers" data-content="This season’s Golden Boot race is heating up, with Erling Haaland, Kylian Mbappé, and Harry Kane all battling for the top scorer title. Their goal-per-game ratios are breaking records...">
+            Top Goal Scorers
+        </div>
+        <div class="article" data-title="Upcoming Matches" data-content="Football fans are eagerly awaiting the upcoming fixtures, including the El Clásico between Barcelona and Real Madrid, the Manchester Derby, and an intense battle between AC Milan and Inter Milan...">
+            Upcoming Matches
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Article Content (Hidden by Default) -->
+<div id="articleModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeArticleModal">&times;</span>
+        <h2 id="articleTitle"></h2>
+        <p id="articleContent"></p>
+    </div>
+</div>
+
+    <!-- Settings Page (Hidden by Default) -->
+<div id="settingsPage" class="settings-container">
+    <h2>Settings</h2>
+    <label>
+        <input type="checkbox" id="darkModeToggle"> Enable Dark Mode
+    </label>
+    <label>
+        <input type="checkbox" id="notificationsToggle"> Enable Notifications
+    </label>
+    <br>
+    <button id="closeSettings">Close</button>
+</div>
+
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+navbar{
+    background-color: white;
+
+}
+.nav-link{
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: white;
+    background-color: white;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*Main section here*/
+.main{
+    background: url(./images/WhatsApp_Image_2024-12-31_at_00.31.24_ceded567_\(2\)-transformed\ \(1\).png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+.main h3{
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+.main h6{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 3px solid #002D62;
+    width: 45%;
+
+}
+.main .bt1{
+    width: 135px;
+    height: 55px;
+    background-color: #002D62;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+.main .bt1:hover{
+    background-color: #0a3b74;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.main .bt2{
+    width: 135px;
+    height: 55px;
+    background-color: transparent;
+    color: #002D62;
+    outline: none;
+    border: 2px solid #002D62;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+.main .bt2:hover{
+    background-color: #002D62;
+    color: white;
+    transition: 0.5s ease-in-out;
+    
+}
+
+/*About section here*/
+.about img{
+    box-shadow: -14px 4px 11px 5px rgba(0,0,0,0.33);
+-webkit-box-shadow: -14px 4px 11px 5px rgba(0,0,0,0.33);
+-moz-box-shadow: -14px 4px 11px 5px rgba(0,0,0,0.33);
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+/*Progress bars here*/
+.progress{
+    background-color: rgb(223,219,219);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+
+    box-shadow: 13px 24px 42px -16px rgba(0,0,0,0.72);
+-webkit-box-shadow: 13px 24px 42px -16px rgba(0,0,0,0.72);
+-moz-box-shadow: 13px 24px 42px -16px rgba(0,0,0,0.72);
+}
+.pro-value1{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height:25px;
+    width: 0 ;
+}
+
+.pro-value2{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height:25px;
+    width: 0 ;
+}
+
+.pro-value3{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height:25px;
+    width: 0 ;
+}
+
+.pro-value4{
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height:25px;
+    width: 0 ;
+}
+
+.progress p{
+    padding: 12px;
+    color: white;
+}
+
+@keyframes load1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+@keyframes load2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes load3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 98%;
+    }
+}
+
+@keyframes load4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+.bt1{
+    outline: none;
+    width: 145px;
+    height: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+
+}
+.bt1:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s ease-in-out;
+}
+
+.bt2{
+    outline: none;
+    width: 145px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 5px;
+
+}
+.bt2:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.card{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+
+    box-shadow: 25px 13px 42px -19px rgba(0,0,0,0.72);
+-webkit-box-shadow: 25px 13px 42px -19px rgba(0,0,0,0.72);
+-moz-box-shadow: 25px 13px 42px -19px rgba(0,0,0,0.72);
+cursor: pointer;
+}
+.card p{
+    color: gray;
+}
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: lightgray;
+    color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 12px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.card:hover .circle{
+    background-color: black;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.circle:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+
+ /* Footer */
+.footer {
+    background-color: transparent;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Responsive Text */
+h3, h6 {
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .bt1, .bt2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+
+iframe {
+    border: 0;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }

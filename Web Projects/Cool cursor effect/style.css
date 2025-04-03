@@ -1,0 +1,23 @@
+html{
+    cursor: none;
+}
+
+
+.cursor{
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    mix-blend-mode: difference;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+h1{
+    color: white;
+    margin-top: 200px;
+    font-size: 4em;
+}

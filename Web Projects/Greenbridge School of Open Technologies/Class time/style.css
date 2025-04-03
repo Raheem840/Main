@@ -1,0 +1,13 @@
+#container{
+    width: 450px;
+    height: 450px;
+    position: relative;
+    background: yellow;
+
+}
+#animation{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: hsl(37, 84%, 47%);
+}
